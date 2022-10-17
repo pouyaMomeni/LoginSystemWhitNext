@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react"
-import Sign from "../../components/forms/signUp"
+import Sign from "/components/forms/signUp"
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 export async function getStaticProps({ locale }) {
     return {

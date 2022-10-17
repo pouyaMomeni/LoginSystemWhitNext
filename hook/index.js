@@ -1,4 +1,4 @@
-import * as api from "../pages/api/_index"
+import * as api from "/pages/api/_index"
 import { useQuery, useMutation } from "react-query"
 
 

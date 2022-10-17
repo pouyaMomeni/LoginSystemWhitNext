@@ -6,7 +6,7 @@ import {
 import React from 'react'
 import { useTranslation } from 'next-i18next';
 import { useDispatch } from 'react-redux'
-import { exite } from '../../store/reducers/users';
+import { exite } from '/store/reducers/users';
 import { useRouter } from 'next/router';
 
 const Nav = () => {

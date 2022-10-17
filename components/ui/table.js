@@ -1,4 +1,4 @@
-import { useAllProducts } from "../../hook"
+import { useAllProducts } from "/hook"
 import {
     Table,
     Thead,
