@@ -2,11 +2,10 @@ import { createSlice } from '@reduxjs/toolkit'
 import cookies from 'js-cookie'
 
 
-
 export const userSlider = createSlice({
     name: 'user',
     initialState: {
-        token: ""
+        token: "",
     },
     reducers: {
         exite: () => {
