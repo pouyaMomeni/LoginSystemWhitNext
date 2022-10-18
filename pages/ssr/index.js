@@ -1,5 +1,6 @@
 import { Flex, Text } from '@chakra-ui/react'
-const index = ({users}) => {
+import { getAllusers } from 'pages/api/_index'
+const index = ({ users }) => {
     return (
         <>
             <Flex flexDirection='column' justifyContent='center' alignItems='center'>
@@ -20,11 +21,10 @@ const index = ({users}) => {
 
 export default index
 export async function getServerSideProps() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/users`)
-    const data = await res.json()
+    const res = getAllusers()
     return {
         props: {
-            users: data
+            users: await (await res).json()
         },
     }
 }

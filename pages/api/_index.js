@@ -1,8 +1,15 @@
 import axios from "axios"
 
 const getAllProducts = async () => {
-    const { data } = await axios.get(`https://jsonplaceholder.typicode.com/users`)
+    // const { data } = await axios.get(`https://jsonplaceholder.typicode.com/users`)
+    const res = await fetch(`https://jsonplaceholder.typicode.com/users`)
+    const data = await res.json()
     return data
+}
+const getAllusers = async () => {
+    const url = `https://jsonplaceholder.typicode.com/users`
+    const res = await fetch(url)
+    return res
 }
 
 
@@ -19,5 +26,6 @@ const login = async (values) => {
 export {
     getAllProducts,
     signUP,
-    login
+    login,
+    getAllusers
 }

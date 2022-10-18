@@ -6,6 +6,7 @@ import { useQuery, useMutation } from "react-query"
 const useAllProducts = () => {
     return useQuery("products", api.getAllProducts)
 }
+
 const useSignIn = () => {
     const mutation = useMutation(api.signUP)
     return mutation
